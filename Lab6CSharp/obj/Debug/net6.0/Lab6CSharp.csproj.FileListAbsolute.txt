@@ -1,0 +1,15 @@
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/bin/Debug/net6.0/Lab6CSharp
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/bin/Debug/net6.0/Lab6CSharp.deps.json
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/bin/Debug/net6.0/Lab6CSharp.runtimeconfig.json
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/bin/Debug/net6.0/Lab6CSharp.dll
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/bin/Debug/net6.0/Lab6CSharp.pdb
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/obj/Debug/net6.0/Lab6CSharp.csproj.AssemblyReference.cache
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/obj/Debug/net6.0/Lab6CSharp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/obj/Debug/net6.0/Lab6CSharp.AssemblyInfoInputs.cache
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/obj/Debug/net6.0/Lab6CSharp.AssemblyInfo.cs
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/obj/Debug/net6.0/Lab6CSharp.csproj.CoreCompileInputs.cache
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/obj/Debug/net6.0/Lab6CSharp.dll
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/obj/Debug/net6.0/refint/Lab6CSharp.dll
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/obj/Debug/net6.0/Lab6CSharp.pdb
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/obj/Debug/net6.0/Lab6CSharp.genruntimeconfig.cache
+/Users/pro100user/Study/Крос-платформне програмування/anna/lab6/Lab6CSharp/obj/Debug/net6.0/ref/Lab6CSharp.dll

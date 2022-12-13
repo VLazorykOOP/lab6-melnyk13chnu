@@ -1,58 +1,99 @@
-﻿// See https://aka.ms/new-console-template for more information
-/// <summary>
-///  Top-level statements 
-///  Код програми (оператори)  вищого рівня
-/// </summary>
-///
-Console.WriteLine("Lab6 C# ");
-AnyFunc();
+﻿using System;
+using pro100user.task2;
+using pro100user.task3;
 
-/// <summary>
-/// 
-///  Top-level statements must precede namespace and type declarations.
-/// At the top-level methods/functions can be defined and used
-/// На верхньому рівні можна визначати та використовувати методи/функції
-/// </summary>
-void AnyFunc()
+namespace pro100user 
 {
-    Console.WriteLine(" Some function in top-level");
-}
-Console.WriteLine("Problems 1 ");
-AnyFunc();
-//  приклад класів
-UserClass cl = new UserClass();
-cl.Name = " UserClass top-level ";
-User.UserClass cl2 = new();
-cl2.Name = " UserClass namespace User ";
-
-
-
-
-/// <summary>
-/// 
-/// Top-level statements must precede namespace and type declarations.
-/// Оператори верхнього рівня мають передувати оголошенням простору імен і типу.
-/// Створення класу(ів) або оголошенням простору імен є закіченням  іструкцій верхнього рівня
-/// 
-/// </summary>
-
-namespace User
-{
-    class UserClass
+    /*
+     * Лабараторна робота №6
+     * Мельник Ганна група 341ск
+     * Варіант 12
+     */
+    public class Lab6
     {
-        public string Name { get; set; }
-        public UserClass()
+        static void Main()
         {
-            Name = "NoName";
+            while (true)
+            {
+                Console.WriteLine("1. Завдання 1-2");
+                Console.WriteLine("2. Завдання 3");
+                Console.WriteLine("3. Вихід");
+                Console.Write("Введіть вибране число: ");
+                try
+                {
+                    int number = int.Parse(Console.ReadLine());
+                    if (number == 3)
+                    {
+                        Console.WriteLine("Вихід...");
+                        return;
+                    }
+
+                    switch (number)
+                    {
+                        case 1:
+                            Task1AndTask2();
+                            break;
+                        case 2:
+                            Task3();
+                            break;
+                        default:
+                            Console.WriteLine("Ви ввели не те число. Повторіть спробу");
+                            break;
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("\nВи не правильно ввели число. Повторіть спробу");
+                }
+                Console.WriteLine();
+            }
         }
-        UserClass(string n)
+        
+        /*
+         * Завдання 1.
+         * Перебудувати ієрархії в лабораторної робота №5
+         * (Побудувати ієрархію класів відповідно до варіанта завдання.
+         * Згідно завдання вибрати базовий клас та похідні.
+         * В класах задати поля, які характерні для кожного класу.
+         * Для всіх класів розробити метод Show(), який виводить дані про об’єкт класу.),
+         * з визначення нових сутностей таким чином
+         * щоб базовими були декілька інтерфейсів користувача та інтерфейси .NET.
+         *
+         * 1.12. Двигун, двигун внутрішнього згоряння, дизель, реактивний двигун.
+         */
+        static void Task1AndTask2()
         {
-            Name = n;
+            List<Engine> examinations = new List<Engine>()
+            {
+                new EngineImpl(),
+                new InternalCombustionEngineImpl(),
+                new DieselEngineImpl(),
+                new JetEngineImpl()
+            };
+            examinations.ForEach(exam => exam.Show()); 
+        }
+        
+        /*
+         * Завдання 2.
+         * Побудувати ієрархію із інтерфейсом, який успадковує інтерфейси .NET.
+         * Побудувати похідні класи, які реалізують інтерфейси відповідно до варіанта завдання.
+         * У кожному класі задати поля та методи, які характерні для цих нього, та визначити методи інтерфейсів.
+         *
+         * 2.2. Створити інтерфейс клас Function з методом обчислення значення функції y=f(x) у заданій точці.
+         * Створити похідні класи: Line (y=ax+b), Quadratic (y=ax2+bx+c), Hyperbola (y=k/x)
+         * зі своїми методами обчислення значення в заданій точці.
+         * Створити масив nфункцій і вивести повну інформацію про значення даних функцій у точці х.
+         */
+        static void Task3()
+        {
+            double x = 5;
+            List<Function> functions = new List<Function>()
+            {
+                new Line(1, 2, x),
+                new Quadratic(1, 2, 3, x),
+                new Hyperbola(3, x)
+            };
+            functions.ForEach(func => Console.WriteLine(func.CalculateY())); 
         }
     }
-
-}
-class UserClass
-{
-    public string Name { get; set; }
 }
